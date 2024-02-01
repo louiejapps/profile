@@ -21,6 +21,21 @@
             color: white;
         }
 
+    /* Add this style to set a fixed width for the container */
+    #container {
+        max-width: 800px; /* Adjust this value based on your design */
+        margin: 0 auto; /* Center the container */
+    }
+
+    /* Other existing styles remain unchanged */
+
+    /* Media query for smaller screens */
+    @media only screen and (max-width: 600px) {
+        #container {
+            max-width: 90%; /* Adjust this value for smaller screens */
+        }
+    }
+
         section {
             padding: 20px;
         }
@@ -59,6 +74,7 @@
         <p>Computer Engineer</p>
     </header>
 
+    <div id="container">
     <section id="works">
         <h2>Freelance Projects & Works:</h2>
         <h5>(These are some of the projects I made)</h5>
@@ -163,6 +179,7 @@
         </div>
 
     </section>
+    </div>
 
     <footer>
         <span>louiejohnc@gmail.com</span>
